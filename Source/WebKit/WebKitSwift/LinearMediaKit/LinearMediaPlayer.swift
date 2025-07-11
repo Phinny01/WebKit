@@ -108,7 +108,6 @@ enum LinearMediaPlayerErrors: Error {
     var contentOverlayViewController: UIViewController?
     var volume = 1.0
     var isMuted = false
-    var sessionDisplayTitle: String?
     var sessionThumbnail: UIImage?
     var isSessionExtended = false
     var hasAudioContent = true
@@ -525,10 +524,6 @@ extension WKSLinearMediaPlayer {
 
     public var isMutedPublisher: AnyPublisher<Bool, Never> {
         publisher(for: \.isMuted).eraseToAnyPublisher()
-    }
-
-    public var sessionDisplayTitlePublisher: AnyPublisher<String?, Never> {
-        publisher(for: \.sessionDisplayTitle).eraseToAnyPublisher()
     }
 
     public var sessionThumbnailPublisher: AnyPublisher<UIImage?, Never> {

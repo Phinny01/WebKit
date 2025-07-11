@@ -270,7 +270,6 @@ public protocol Playable : AnyObject {
  func endEditingVolume()
  var isMutedPublisher: Combine.AnyPublisher<Swift.Bool, Swift.Never> { get }
  func setIsMuted(_ value: Swift.Bool)
- var sessionDisplayTitlePublisher: Combine.AnyPublisher<Swift.String?, Swift.Never> { get }
  var sessionThumbnailPublisher: Combine.AnyPublisher<UIKit.UIImage?, Swift.Never> { get }
  var isSessionExtendedPublisher: Combine.AnyPublisher<Swift.Bool, Swift.Never> { get }
  var hasAudioContentPublisher: Combine.AnyPublisher<Swift.Bool, Swift.Never> { get }

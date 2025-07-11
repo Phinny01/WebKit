@@ -127,7 +127,6 @@ NS_SWIFT_UI_ACTOR
 @property (nonatomic, strong, nullable) UIViewController *contentOverlayViewController;
 @property (nonatomic) double volume;
 @property (nonatomic) BOOL isMuted;
-@property (nonatomic, copy, nullable) NSString *sessionDisplayTitle;
 @property (nonatomic, strong, nullable) UIImage *sessionThumbnail;
 @property (nonatomic) BOOL isSessionExtended;
 @property (nonatomic) BOOL hasAudioContent;
